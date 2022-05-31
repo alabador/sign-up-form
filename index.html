@@ -10,12 +10,40 @@
 <body>
     <main id="form-container">
         <div class="image-container">
-            
+            <div class="logo"></div>
+            <p id="image-credit">Photo by 
+                <a href="https://unsplash.com/@goosegrease?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Derek Oyen</a> 
+                on <a href="https://unsplash.com/s/photos/antarctica?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
         </div>
         <div class="form-container">
-            <section class="form-info" id="form-header"></section>
-            <section class="form-info" id="form"></section>
-            <section class="form-info" id="form-cta"></section>
+            <section class="form-info-container" id="form-header">
+                <h2 class="form-info-text">This is not a real online service!</h2>
+                <h2 class="form-info-text">You know you want to.</h2>
+            </section>
+            <section class="form-info-container" id="form">
+                <h2 class="form-text">Let's do this!</h2>
+                <form action="" method="post">
+                    <div class="input-container">
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form-input">
+                    </div>
+                    <div class="input-container">
+                        <input type="text" class="form-input">
+                    </div>
+                </form>
+            </section>
+            <section class="form-info-container" id="form-cta">
+                <button type="submit" class="cta">Create Account</button>
+                <p class="log-in-text">Already have an account?
+                    <a href='#' class="log-in-link">Log in</a>
+                </p>
+            </section>
         </div>
     </main>
 </body>
