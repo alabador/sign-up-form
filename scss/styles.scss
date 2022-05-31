@@ -1,1 +1,6 @@
 @use 'variables';
+@use 'reset';
+
+#form-container {
+    height:100vh;
+}
