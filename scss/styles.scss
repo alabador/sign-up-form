@@ -6,13 +6,17 @@ main {
     width: 100vw;
 }
 
-.image-container {
+@mixin fixed() {
     position: fixed;
+    height: 100%;
+}
+
+.image-container {
+    @include fixed;
+    width: 35%;
     top: 0;
     bottom: 0;
     left: 0;
-    height: 100%;
-    width: 40%;
     text-align: center;
     background-image: url(/images/derek-oyen-4ReskwNsh68-unsplash.jpg);
     background-size: cover;
@@ -28,6 +32,15 @@ main {
         font-family: 'Staatliches', cursive;
         letter-spacing: 0.3rem;
     }
+
+    #image-credit {
+        font-size: 0.8rem;
+        color: variables.$white;
+        position: fixed;
+        bottom: 10px;
+        width: inherit;
+        text-align: center;
+    }
 }
 
 .logo {
@@ -41,13 +54,8 @@ main {
     margin-left: 0.5rem;
 }
 
-#image-credit {
-    font-size: 0.8rem;
-    color: variables.$white;
-}
-
 .form-container {
-    width: 60%;
-    margin-left: 40%;
-    height: 100%;
+    @include fixed;
+    width: 65%;
+    margin-left: 35%;
 }

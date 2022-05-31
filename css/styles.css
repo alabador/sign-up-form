@@ -71,6 +71,7 @@ pre {
  */
 a {
   background-color: transparent;
+  color: inherit;
 }
 
 /**
@@ -351,11 +352,11 @@ main {
 
 .image-container {
   position: fixed;
+  height: 100%;
+  width: 35%;
   top: 0;
   bottom: 0;
   left: 0;
-  height: 100%;
-  width: 40%;
   text-align: center;
   background-image: url(/images/derek-oyen-4ReskwNsh68-unsplash.jpg);
   background-size: cover;
@@ -371,6 +372,14 @@ main {
   font-family: "Staatliches", cursive;
   letter-spacing: 0.3rem;
 }
+.image-container #image-credit {
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 10px;
+  width: inherit;
+  text-align: center;
+}
 
 .logo {
   width: 100px;
@@ -383,15 +392,11 @@ main {
   margin-left: 0.5rem;
 }
 
-#image-credit {
-  font-size: 0.8rem;
-  color: #FFFFFF;
-}
-
 .form-container {
-  width: 60%;
-  margin-left: 40%;
+  position: fixed;
   height: 100%;
+  width: 65%;
+  margin-left: 35%;
 }
 
 /*# sourceMappingURL=styles.css.map */
