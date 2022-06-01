@@ -1,5 +1,5 @@
-@use 'reset';
-@use 'variables';
+@import 'reset';
+@import 'variables';
 
 main {
     height:100vh;
@@ -9,13 +9,13 @@ main {
 @mixin fixed() {
     position: fixed;
     height: 100%;
+    top: 0;
+    bottom: 0;
 }
 
 .image-container {
     @include fixed;
     width: 35%;
-    top: 0;
-    bottom: 0;
     left: 0;
     text-align: center;
     background-image: url(/images/derek-oyen-4ReskwNsh68-unsplash.jpg);
@@ -25,7 +25,7 @@ main {
     .logo-container {
         display: flex;
         margin-top: 35%;
-        background-color: variables.$dark-background;
+        background-color: $dark-background;
         padding: 12px 0;
         justify-content: center;
         align-items: center;
@@ -35,7 +35,7 @@ main {
 
     #image-credit {
         font-size: 0.8rem;
-        color: variables.$white;
+        color: white;
         position: fixed;
         bottom: 10px;
         width: inherit;
@@ -50,12 +50,12 @@ main {
 }
 
 .logo-title {
-    color: variables.$white;
+    color: white;
     margin-left: 0.5rem;
 }
 
 .form-container {
     @include fixed;
     width: 65%;
-    margin-left: 35%;
+    right: 0;
 }
