@@ -13,6 +13,11 @@ main {
     bottom: 0;
 }
 
+@mixin flex-column() {
+    display: flex;
+    flex-direction: column;
+}
+
 .image-container {
     @include fixed;
     width: 35%;
@@ -56,6 +61,21 @@ main {
 
 .form-container {
     @include fixed;
+    @include flex-column;
     width: 65%;
     right: 0;
+    font-family: 'Barlow', sans-serif;
+    font-size: 16px;
+    color: $blue-text;
+    
+    #form-header {
+        @include flex-column;
+        justify-content: center;
+        font-size: 1.1rem;
+    }
+}
+
+.form-info-container {
+    flex: 1;
+    padding: 0 10% 0 5%; 
 }
