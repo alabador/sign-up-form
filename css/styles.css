@@ -405,6 +405,17 @@ main {
   margin-left: 0.5rem;
 }
 
+.form-info-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 10% 0 5%;
+}
+
+.form-info-container h2 {
+  margin-bottom: 0;
+}
+
 .form-container {
   position: fixed;
   height: 100%;
@@ -422,7 +433,7 @@ main {
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
   color: #464646;
-  background-color: #f8f8f8;
+  background-color: #fcfcfc;
 }
 
 .form-container #form-header {
@@ -451,6 +462,10 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #e4e4e4;
+          box-shadow: -0.5px 4.5px 8px -3.5px #e4e4e4;
 }
 
 .form-container #form-cta {
@@ -466,13 +481,6 @@ main {
           justify-content: flex-start;
 }
 
-.form-info-container {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  padding: 0 10% 0 5%;
-}
-
 #form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -486,10 +494,28 @@ main {
 
 #form .input-container {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #547692;
+}
+
+#form .input-container label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
 }
 
 #form .input-container .form-input {
   width: 70%;
+  border: 1px solid #E5E7EB;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-family: inherit;
 }
 
 .cta {
@@ -501,4 +527,6 @@ main {
   font-weight: 700;
   border: none;
   border-radius: 8px;
+  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #72C5E0;
+          box-shadow: -0.5px 4.5px 8px -3.5px #72C5E0;
 }

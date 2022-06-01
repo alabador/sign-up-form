@@ -59,6 +59,15 @@ main {
     margin-left: 0.5rem;
 }
 
+.form-info-container {
+    flex: 1;
+    padding: 0 10% 0 5%; 
+    
+    h2 {
+        margin-bottom: 0;
+    }
+}
+
 .form-container {
     @include fixed;
     @include flex-column;
@@ -79,6 +88,9 @@ main {
         background-color: white;
         @include flex-column;
         justify-content: flex-start;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        box-shadow: $form-shadow; 
     }
 
     #form-cta {
@@ -86,11 +98,6 @@ main {
         justify-content: flex-start;
 
     }
-}
-
-.form-info-container {
-    flex: 1;
-    padding: 0 10% 0 5%; 
 }
 
 #form {
@@ -101,10 +108,21 @@ main {
 
     .input-container {
         width: 50%;
+        @include flex-column;
+        color: $blue-text;
+
+        label {
+            font-size: 0.7rem;
+            letter-spacing: 0.1rem;
+            font-weight: 500;
+        }
 
         .form-input{
             width: 70%;
-
+            border: 1px solid $input-border;
+            padding: 0.4rem;
+            border-radius: 4px;
+            font-family: inherit;
         }
     }
 }
@@ -120,4 +138,5 @@ main {
     
     border: none;
     border-radius: 8px;
+    box-shadow: $cta-shadow;
 }
