@@ -421,7 +421,8 @@ main {
   right: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  color: #50509c;
+  color: #5586b4;
+  background-color: #dadada;
 }
 
 .form-container #form-header {
@@ -436,6 +437,29 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 1.1rem;
+}
+
+.form-container #form-section {
+  background-color: white;
+}
+
+.form-container #form-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.cta {
+  width: 200px;
+  padding: 0.6rem 1rem;
+  margin-top: 2rem;
 }
 
 .form-info-container {

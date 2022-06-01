@@ -67,12 +67,29 @@ main {
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
     color: $blue-text;
+    background-color: rgb(218, 218, 218);
     
     #form-header {
         @include flex-column;
         justify-content: center;
         font-size: 1.1rem;
     }
+
+    #form-section {
+        background-color: white;
+    }
+
+    #form-cta {
+        @include flex-column;
+        justify-content: flex-start;
+
+    }
+}
+
+.cta {
+    width: 200px;
+    padding: 0.6rem 1rem;
+    margin-top: 2rem;
 }
 
 .form-info-container {
