@@ -66,17 +66,19 @@ main {
     right: 0;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;
-    color: $blue-text;
-    background-color: rgb(218, 218, 218);
+    color: $dark-text;
+    background-color: $form-background;
     
     #form-header {
         @include flex-column;
         justify-content: center;
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     #form-section {
         background-color: white;
+        @include flex-column;
+        justify-content: flex-start;
     }
 
     #form-cta {
@@ -86,13 +88,36 @@ main {
     }
 }
 
-.cta {
-    width: 200px;
-    padding: 0.6rem 1rem;
-    margin-top: 2rem;
-}
-
 .form-info-container {
     flex: 1;
     padding: 0 10% 0 5%; 
+}
+
+#form {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-content: space-evenly;
+
+    .input-container {
+        width: 50%;
+
+        .form-input{
+            width: 70%;
+
+        }
+    }
+}
+
+.cta {
+    width: 200px;
+    padding: 0.8rem 1rem;
+    margin-top: 2rem;
+    
+    background-color: $cta-blue;
+    color: white;
+    font-weight: 700;
+    
+    border: none;
+    border-radius: 8px;
 }

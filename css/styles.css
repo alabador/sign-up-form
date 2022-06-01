@@ -421,8 +421,8 @@ main {
   right: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  color: #5586b4;
-  background-color: #dadada;
+  color: #464646;
+  background-color: #f8f8f8;
 }
 
 .form-container #form-header {
@@ -436,11 +436,21 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .form-container #form-section {
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .form-container #form-cta {
@@ -456,15 +466,39 @@ main {
           justify-content: flex-start;
 }
 
-.cta {
-  width: 200px;
-  padding: 0.6rem 1rem;
-  margin-top: 2rem;
-}
-
 .form-info-container {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 0 10% 0 5%;
+}
+
+#form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+#form .input-container {
+  width: 50%;
+}
+
+#form .input-container .form-input {
+  width: 70%;
+}
+
+.cta {
+  width: 200px;
+  padding: 0.8rem 1rem;
+  margin-top: 2rem;
+  background-color: #72C5E0;
+  color: white;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
 }
