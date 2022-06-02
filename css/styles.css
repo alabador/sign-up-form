@@ -530,8 +530,13 @@ main {
           box-shadow: -0.5px 4.5px 8px -3.5px #d7e4e9;
 }
 
-#form .input-container .form-input:not(:placeholder-shown):not([type='password']):invalid {
+#form .input-container .form-input:not(:placeholder-shown):invalid {
   border-color: red;
+  outline: none;
+}
+
+#form .input-container .form-input[type='password']:valid {
+  border-color: #E5E7EB;
   outline: none;
 }
 
