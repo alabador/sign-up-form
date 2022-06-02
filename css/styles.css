@@ -530,12 +530,25 @@ main {
           box-shadow: -0.5px 4.5px 8px -3.5px #d7e4e9;
 }
 
-input:invalid {
+#form .input-container .form-input:not(:placeholder-shown):invalid {
   border-color: red;
+  outline: none;
 }
 
-input:valid {
-  border-color: #0b9e0b;
+#form .input-container .form-input::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+
+#form .input-container .form-input:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+#form .input-container .form-input::-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+#form .input-container .form-input::placeholder {
+  color: #bbbbbb;
 }
 
 .cta {

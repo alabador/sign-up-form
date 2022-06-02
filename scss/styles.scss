@@ -135,15 +135,16 @@ main {
             outline: 1px solid $cta-blue;
             box-shadow: $input-shadow;
         }
+
+        .form-input:not(:placeholder-shown):invalid {
+            border-color: red;
+            outline: none;
+        }
+
+        .form-input::placeholder {
+            color: rgb(187, 187, 187);
+        }
     }
-}
-
-input:invalid {
-    border-color: red;
-}
-
-input:valid {
-    border-color: rgb(11, 158, 11);
 }
 
 .cta {
