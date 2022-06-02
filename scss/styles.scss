@@ -136,7 +136,7 @@ main {
             box-shadow: $input-shadow;
         }
 
-        .form-input:not(:placeholder-shown):invalid {
+        .form-input:not(:placeholder-shown):not([type='password']):invalid {
             border-color: red;
             outline: none;
         }
