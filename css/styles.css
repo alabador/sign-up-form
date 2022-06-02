@@ -413,7 +413,8 @@ main {
 }
 
 .form-info-container h2 {
-  margin-bottom: 0;
+  margin-top: 0;
+  color: #547692;
 }
 
 .form-container {
@@ -432,8 +433,8 @@ main {
   right: 0;
   font-family: 'Barlow', sans-serif;
   font-size: 16px;
-  color: #464646;
-  background-color: #fcfcfc;
+  color: #222222;
+  background-color: #f8f8f8;
 }
 
 .form-container #form-header {
@@ -447,7 +448,11 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1rem;
+}
+
+.form-container #form-header h3 {
+  font-size: 1.1rem;
+  font-weight: 500;
 }
 
 .form-container #form-section {
@@ -462,10 +467,10 @@ main {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #e4e4e4;
-          box-shadow: -0.5px 4.5px 8px -3.5px #e4e4e4;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  -webkit-box-shadow: -0.5px 4.5px 10px -3.5px #d4d4d4;
+          box-shadow: -0.5px 4.5px 10px -3.5px #d4d4d4;
 }
 
 .form-container #form-cta {
@@ -501,13 +506,14 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  color: #547692;
+  padding-top: 1rem;
 }
 
 #form .input-container label {
   font-size: 0.7rem;
   letter-spacing: 0.1rem;
   font-weight: 500;
+  color: #547692;
 }
 
 #form .input-container .form-input {
@@ -522,7 +528,7 @@ main {
   width: 200px;
   padding: 0.8rem 1rem;
   margin-top: 2rem;
-  background-color: #72C5E0;
+  background-color: #6abad4;
   color: white;
   font-weight: 700;
   border: none;

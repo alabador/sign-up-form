@@ -63,8 +63,9 @@ main {
     flex: 1;
     padding: 0 10% 0 5%; 
     
-    h2 {
-        margin-bottom: 0;
+    h2{
+        margin-top: 0;
+        color: $blue-text;
     }
 }
 
@@ -81,15 +82,19 @@ main {
     #form-header {
         @include flex-column;
         justify-content: center;
-        font-size: 1rem;
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
     }
 
     #form-section {
         background-color: white;
         @include flex-column;
         justify-content: flex-start;
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 5%;
+        padding-bottom: 5%;
         box-shadow: $form-shadow; 
     }
 
@@ -109,12 +114,13 @@ main {
     .input-container {
         width: 50%;
         @include flex-column;
-        color: $blue-text;
+        padding-top: 1rem;
 
         label {
             font-size: 0.7rem;
             letter-spacing: 0.1rem;
             font-weight: 500;
+            color: $blue-text;
         }
 
         .form-input{
