@@ -524,6 +524,20 @@ main {
   font-family: inherit;
 }
 
+#form .input-container .form-input:focus {
+  outline: 1px solid #6abad4;
+  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #d7e4e9;
+          box-shadow: -0.5px 4.5px 8px -3.5px #d7e4e9;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+input:valid {
+  border-color: #0b9e0b;
+}
+
 .cta {
   width: 200px;
   padding: 0.8rem 1rem;
@@ -533,6 +547,6 @@ main {
   font-weight: 700;
   border: none;
   border-radius: 8px;
-  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #72C5E0;
-          box-shadow: -0.5px 4.5px 8px -3.5px #72C5E0;
+  -webkit-box-shadow: -0.5px 4.5px 8px -3.5px #b4d4df;
+          box-shadow: -0.5px 4.5px 8px -3.5px #b4d4df;
 }

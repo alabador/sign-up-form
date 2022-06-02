@@ -130,7 +130,20 @@ main {
             border-radius: 4px;
             font-family: inherit;
         }
+
+        .form-input:focus{
+            outline: 1px solid $cta-blue;
+            box-shadow: $input-shadow;
+        }
     }
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: rgb(11, 158, 11);
 }
 
 .cta {
