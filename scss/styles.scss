@@ -165,3 +165,34 @@ main {
     border-radius: 8px;
     box-shadow: $cta-shadow;
 }
+
+@media screen and (max-width: $layout-breakpoint-mobile) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    .image-container{
+        position: relative;
+        width: 100%;
+        @include flex-column;
+        justify-content: center;
+
+        .logo-container{
+            height: 70%;
+            margin-top: 20%;
+        }
+    }
+    .form-container{
+        position: relative;
+        width: 100%;
+
+        #form {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+
+        #form .input-container {
+            width: 100%;
+        }
+    }
+}
